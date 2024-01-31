@@ -1,7 +1,8 @@
-NAME = bureaucrat
+NAME = bureaucrat1
 
 SRCS = main.cpp \
 Bureaucrat.cpp \
+Form.cpp \
 
 CXX = c++
 

@@ -2,6 +2,9 @@
 #define BUREAUCRAT_HPP
 #include <iostream>
 #include <stdexcept>
+#include "Form.hpp"
+
+class Form;
 
 class Bureaucrat{
 
@@ -27,6 +30,7 @@ class Bureaucrat{
 
         const std::string& getName(void)const;
         int getGrade(void) const;
+        void SignForm(Form & form);
 
 
     private :
