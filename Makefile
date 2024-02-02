@@ -1,8 +1,11 @@
-NAME = bureaucrat1
+NAME = bureaucrat2
 
 SRCS = main.cpp \
 Bureaucrat.cpp \
-Form.cpp \
+AForm.cpp \
+PresidentialPardonForm.cpp \
+# RobotomyRequestForm.cpp \
+# ShrubberyCreationForm.cpp \
 
 CXX = c++
 
