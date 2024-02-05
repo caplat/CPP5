@@ -1,21 +1,23 @@
 #include "Bureaucrat.hpp"
 #include "AForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "Intern.hpp"
 
 int main()
 {
-    Bureaucrat b;
-    Bureaucrat a("PDG",1);
-    PresidentialPardonForm c;
+    Intern larbin;
+    AForm* form;
+    AForm* inconnu;
 
-    std::cout << b << std::endl;
-    std::cout << c << std::endl;
+    form = larbin.makeForm("ShrubberyCreationForm","Terminator");
+    std::cout << *form << std::endl;
 
-    b.executeForm(c);
+    inconnu = larbin.makeForm("form_inconnu","inconnu");
 
-    std::cout << c << std::endl;
-    a.SignForm(c);
-    std::cout << c << std::endl;
-    b.executeForm(c);
-    a.executeForm(c);
+    if(form != NULL)
+        delete form;
+    if(inconnu != NULL)
+        delete inconnu;
 }

@@ -36,7 +36,7 @@ const std::string& PresidentialPardonForm::getTarget()const{
 void PresidentialPardonForm::execute(const Bureaucrat & executor)const{
     
     {
-        if(! getSigned())
+        if(!getSigned())
             throw FormNotsignException();
         if(executor.getGrade() > getExe())
             throw GradetooLowException();

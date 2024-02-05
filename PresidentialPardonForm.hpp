@@ -3,7 +3,6 @@
 #include "Bureaucrat.hpp"
 #include "AForm.hpp"
 #include <iostream>
-#include <stdexcept>
 
 class PresidentialPardonForm : public AForm{
 
